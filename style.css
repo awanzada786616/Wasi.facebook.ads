@@ -1,0 +1,57 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+.animated-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  background: linear-gradient(45deg, #ff0057, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.card {
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+.gradient.low {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+.gradient.medium {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+}
+.gradient.high {
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+.gradient.ultra {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+}
+.order-btn {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.order-btn:hover {
+  transform: scale(1.1);
+}
